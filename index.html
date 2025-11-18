@@ -5,14 +5,13 @@
         <title> Kuro Games</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body>  
 <header>
     <h1>Kuro Games</h1>         
     <nav>
         <div>
-        <a>Inicio</a>
-        <a>Categoria</a>
-        <a>Carrito</a>
+        <a class="a.header" href="index.html">Inicio</a>
+        <a href="cart.html">Carrito</a>
         <a>Ayuda</a>
         </div>
     </nav>
@@ -20,79 +19,19 @@
     <main>
             <aside class="aside">
                 <div>
-                 <input type="text" placeholder="Buscar">   
+                 <input id="inputSearchProducts" type="text" placeholder="Buscar...">   
                 </div>
                 <ol>
-                    <li>Todos</li>
-                    <li>PC</li>
-                    <li>PS3</li>
-                    <li>XBOX</li>
-                    <li>PS2</li>
+                    <li><a class="categoryProductFilter" href="#">PC</a></li>
+                    <li><a class="categoryProductFilter" href="#">PS2</a></li>
+                    <li><a class="categoryProductFilter" href="#">PS3</a></li>
+                    <li><a class="categoryProductFilter" href="#">XBOX</a></li>
                 </ol>
             </aside>
             <section class="productContainer">                    
-                 <div class="productItem">         
-                    <a href="./productDetail.html">                    
-                     <div>
-                      <img src="portadas/Silksong.jpg" alt="producto 1">
-                     <p>Hollow knight Silkson</p>
-                        <p>precio: $7.99</p>
-                        <button>añadir al carrito</button>
-                     </div>
-                    </a>   
-                </div>    
-                <div class="productItem">
-                    <a href="./productDetail.html">                                            
-                     <div>
-                      <img src="portadas/RE4.jpg" alt="producto 1">
-                        <p>Hollow knight Silkson</p>
-                        <p>precio: $10</p>
-                        <button>añadir al carrito</button>
-                     </div>  
-                    </a>
-                </div>             
-                <div class="productItem">         
-                    <a href="./productDetail.html">                    
-                     <div>
-                      <img src="portadas/RE3.jpg" alt="producto 1">
-                     <p>Hollow knight Silkson</p>
-                        <p>precio: $59,99</p>
-                        <button>añadir al carrito</button>
-                     </div>
-                    </a>   
-                </div>   
-                 <div class="productItem">         
-                    <a href="./productDetail.html">                    
-                     <div>
-                      <img src="portadas/Manhunt.jpg" alt="producto 1">
-                     <p>Hollow knight Silkson</p>
-                        <p>precio: $2,45</p>
-                        <button>añadir al carrito</button>
-                     </div>
-                    </a>   
-                </div>  
-                 <div class="productItem">         
-                    <a href="./productDetail.html">                    
-                     <div>
-                      <img src="portadas/HollowKnight.jpg" alt="producto 1">
-                     <p>Hollow knight Silkson</p>
-                        <p>precio: $3,99</p>
-                        <button>añadir al carrito</button>
-                     </div>
-                    </a>   
-                </div>  
-                 <div class="productItem">         
-                    <a href="./productDetail.html">                    
-                     <div>
-                      <img src="portadas/Borderlands.jpg" alt="producto 1">
-                     <p>Hollow knight Silkson</p>
-                        <p>precio: $20</p>
-                        <button>añadir al carrito</button>
-                     </div>
-                    </a>   
-                </div>        
+                 
             </section>
         </main>
-       <script src="./app.js"></script>
+       <script src="./app.js"></script>  
     </body>
 </html>
