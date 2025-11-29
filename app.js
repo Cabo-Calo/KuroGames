@@ -8,7 +8,7 @@ const categoryLinks = document.querySelectorAll('.categoryProductFilter');
 categoryLinks.forEach(link => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
-        const category = event.target.innerText.toLowerCase();
+        const category = event.target.innerText;
         const productFiltered = filterProductsCategory(category);
         renderProducts(productFiltered);
     });

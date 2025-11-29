@@ -13,6 +13,7 @@ header a {
   border-style: hidden;
   padding: 10px 20px;
 
+
 }
 
 Img{
@@ -29,6 +30,7 @@ header{
     margin: 15px;
     padding: 15px;
     font-size: xx-large;
+    display: grid;
 }
 
 nav div{
@@ -54,7 +56,7 @@ h1{
  padding: 30px;
 }
 
-aside{
+.aside{
   width: 250px;
   background-color: rgba(39, 37, 37, 0.671);
 }
@@ -64,6 +66,17 @@ main{
   flex-direction: row;
   padding: 20px;
   min-height: 60vh;
+}
+
+.categoryProductFilter{
+  display: flex ;
+  background-color: rgb(255, 215, 0);
+  color: black;
+  font-size: medium;
+  gap: 20px;
+  border-style: hidden;
+  padding: 10px 20px;
+  width: fit-content;
 }
 
 .productItem{
@@ -79,9 +92,40 @@ main{
   border-radius: 15px;
 
 }
+ 
+.asideMovile {
+  display: none; /* oculto en desktop */
+}
 
-@media (max-width:768px) {
-  main{
+@media (max-width: 768px) {
+  main {
     flex-direction: column;
   }
+
+  .aside {
+    display: none; 
+  }
+
+  .asideMovile {
+    display: grid;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 215, 0);
+    color: black;
+    text-align: center;
+    font-size: x-large;
+  }
+
+.productContainer {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ flex-grow: 2;
+ padding: 30px;
+
 }
+
+
+
+}
+
