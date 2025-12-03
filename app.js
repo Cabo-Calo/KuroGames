@@ -1,6 +1,8 @@
 
 let listProducts = []
 
+const listadoDom = document.getElementById("listado");
+const form = document.getElementById("formProducto");
 const productsDomElements = document.querySelector( '.productContainer'); //elemento padre
 const inputSearch = document.getElementById('inputSearchProducts');
 const categoryLinks = document.querySelectorAll('.categoryProductFilter');
@@ -125,4 +127,3 @@ async function getProductsFromAirtable() {
 }
 
 getProductsFromAirtable();
-

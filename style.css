@@ -23,7 +23,10 @@ height: 373px;
 
 }
 
-
+footer div{
+ display: block;
+  text-align: center;
+}
 
 header{
     background-color: rgba(39, 37, 37, 0.671);
